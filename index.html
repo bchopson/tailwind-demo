@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-  <link rel="stylesheet" href="./app.css"/>
-</head>
-<body>
-  <nav class="bg-green-400">
-    <ul class="w-full lg:flex">
-      <li><a class="nav-link" href="#">Home</a></li>
-      <li><a class="nav-link" href="#">Services</a></li>
-      <li><a class="nav-link" href="#">About</a></li>
-    </ul>
-  </nav>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Holocron</title>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <nav
+      class="bg-green-400 flex flex-wrap justify-between items-center p-6"
+      x-data="{ navOpen: true }"
+    >
+      <div class="flex-shrink-0 mr-4">
+        <a href="#" class="block text-2xl flex items-center">
+          <i class="fab fa-jedi-order fa-2x"></i>&nbsp;<span
+            class="inline-block align-middle"
+            >Holocron</span
+          >
+        </a>
+      </div>
+      <div class="block lg:hidden">
+        <button
+          class="px-3 py-2 border rounded border-black"
+          @click="navOpen = !navOpen"
+        >
+          <i class="fas fa-bars fa-2x"></i>
+        </button>
+      </div>
+      <ul
+        :class="{ 'md:hidden': !navOpen }"
+        class="w-full lg:w-auto flex-grow lg:flex text-lg"
+      >
+        <li><a class="nav-link" href="#">Search</a></li>
+        <li><a class="nav-link" href="#">Explore</a></li>
+        <li><a class="nav-link" href="#">About</a></li>
+      </ul>
+    </nav>
+  </body>
 </html>
