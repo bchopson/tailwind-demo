@@ -5,5 +5,15 @@
 @tailwind utilities;
 
 .nav-link {
-  @apply p-6 block;
+  @apply py-6 block;
+}
+
+@screen lg {
+  .nav-link {
+    @apply px-6;
+  }
+}
+
+.nav-link:hover {
+  @apply text-black;
 }
