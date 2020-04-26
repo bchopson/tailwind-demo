@@ -17,3 +17,13 @@
 .nav-link:hover {
   @apply text-black;
 }
+
+.border-bottom {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: theme('colors.gray.600');
+}
+
+.search-widget {
+  margin-left: -25px;
+}

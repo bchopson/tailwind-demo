@@ -2,7 +2,7 @@
   "name": "simple-site",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "alpinejs": "^2.3.0",
@@ -13,6 +13,7 @@
     "prettier": "2.0.4"
   },
   "scripts": {
+    "serve": "parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

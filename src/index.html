@@ -12,7 +12,7 @@
   <body>
     <nav
       class="bg-green-400 text-gray-800 flex flex-wrap justify-between items-center p-6 lg:py-0"
-      x-data="{ navOpen: true }"
+      x-data="{ navOpen: false }"
     >
       <div class="flex-shrink-0 mr-4">
         <a href="/" class="block text-2xl flex items-center">
@@ -39,6 +39,13 @@
         <li><a class="nav-link" href="#">About</a></li>
       </ul>
     </nav>
-    <div class="container mx-auto px-4"></div>
+    <div class="container mx-auto px-4">
+      <input
+        type="text"
+        class="h-10 border-bottom"
+        placeholder="search the archives"
+      />
+      <i class="fas fa-search text-gray-600 search-widget"></i>
+    </div>
   </body>
 </html>
